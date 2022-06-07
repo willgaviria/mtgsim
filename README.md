@@ -4,11 +4,11 @@ Repo for main code for MTG simulator for deck draw stats
 ***Install python package***
 Make sure to have python (>=3.7) and pip installed
 
-'''
-git clone 
-cd 
+```python
+git clone git@github.com:willgaviria/mtgsim.git
+cd mtgsim
 pip install -e .
 jupyter notebook
-'''
+```
 
-In jupyter, open <code>example_simulations.ipynb</code> and run cells to verify installation.
+In jupyter, open `example_simulations.ipynb` and run cells to verify installation.
