@@ -1,7 +1,8 @@
 # mtgsim project
 Repo for main code for MTG simulator for deck draw stats
 
-***Install***
+## Install
+
 Make sure to have python (>=3.7) and pip installed
 
 ```python
