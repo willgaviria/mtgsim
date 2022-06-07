@@ -8,6 +8,6 @@ setup(
     description='Simulator for magic the gathering draw/deck stats',
     packages=find_packages(),
     install_requires=[
-        'numpy',
+        'jupyter',
     ],
 )

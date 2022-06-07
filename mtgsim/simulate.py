@@ -25,10 +25,10 @@ def simulate(n_games: int,
         turn_stats[k]['missed_land_drops'] = []
 
     deck = Deck(
-        spells=spells, basic_lands=basic_lands, fetch_lands=fetch_lands)
+            spells=spells, basic_lands=basic_lands, fetch_lands=fetch_lands)
     for _ in range(n_games):
+        deck.shuffle()
         game = Game(deck=copy.deepcopy(deck), verbose=verbose)
-        game.deck.shuffle()
 
         for i in range(max(turn_stats.keys())):
             game.play_turn()

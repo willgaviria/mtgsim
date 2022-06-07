@@ -1,3 +1,4 @@
+import copy
 from typing import List, Optional
 import random
 
@@ -28,7 +29,7 @@ class Deck:
             f'Cannot draw {n} when {len(self.cards)} cards are left in deck.'
         drawn = self.cards[:n]
         self.cards = self.cards[n:]
-        return drawn
+        return copy.deepcopy(drawn)
 
     def count(self, type: Optional[str] = None) -> int:
         if type:
